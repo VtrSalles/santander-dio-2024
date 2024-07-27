@@ -29,7 +29,11 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-
+tasks.jar {
+	manifest {
+		attributes["Main-class"] = "me.dio.santander_dio_2024.Application"
+	}
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
