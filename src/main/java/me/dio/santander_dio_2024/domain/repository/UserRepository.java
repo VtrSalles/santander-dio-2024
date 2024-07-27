@@ -1,6 +1,6 @@
-package me.dio.santander_dio_2024.repository;
+package me.dio.santander_dio_2024.domain.repository;
 
-import me.dio.santander_dio_2024.model.User;
+import me.dio.santander_dio_2024.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

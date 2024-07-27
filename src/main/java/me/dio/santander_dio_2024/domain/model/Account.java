@@ -1,4 +1,4 @@
-package me.dio.santander_dio_2024.model;
+package me.dio.santander_dio_2024.domain.model;
 
 import jakarta.persistence.*;
 
@@ -13,10 +13,10 @@ public class Account {
 
     private String agency;
 
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     private BigDecimal balance;
 
-    @Column(name = "addition_limit", scale = 13, precision = 2)
+    @Column(name = "addition_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
     public Long getId() {
